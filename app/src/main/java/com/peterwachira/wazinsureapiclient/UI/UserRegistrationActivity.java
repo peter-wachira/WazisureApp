@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.peterwachira.wazinsureapiclient.R;
+
 public class UserRegistrationActivity extends AppCompatActivity {
 
     @Override
