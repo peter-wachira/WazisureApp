@@ -1,8 +1,10 @@
-package com.peterwachira.wazinsureapiclient;
+package com.peterwachira.wazinsureapiclient.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.peterwachira.wazinsureapiclient.R;
 
 public class MainActivity extends AppCompatActivity {
 
