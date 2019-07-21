@@ -3,6 +3,8 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.peterwachira.wazinsureapiclient">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <dist:module dist:instant="true" />
 
     <application
@@ -12,9 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.UserRegistrationActivity"></activity>
+        <activity android:name=".UI.CustomersDisplayActivity"></activity>
+        <activity android:name=".UI.RegistrationActivity" />
         <activity android:name=".UI.LoginActivity" />
-        <activity android:name=".UI.MainActivity">
+        <activity android:name=".UI.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

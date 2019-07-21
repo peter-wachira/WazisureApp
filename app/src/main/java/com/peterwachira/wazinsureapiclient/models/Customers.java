@@ -2,7 +2,12 @@ package com.peterwachira.wazinsureapiclient.models;
 
 // This entity contains the KYC details of  a registered customer
 
-public class customerDescription {
+
+
+public class Customers {
+
+    String customer_id;
+    String id_no;
     String first_name;
     String last_name;
     String dob;
@@ -20,7 +25,12 @@ public class customerDescription {
     String nok_mobileno;
     String nok_relation;
     String agent_code;
-    public customerDescription(String first_name, String last_name, String dob, String kra_pin, String occupation, String mobile_no, String email, String location, String postal_address, String postal_code, String town, String country, String photo_url, String nok_fullname, String nok_mobileno, String nok_relation, String agent_code) {
+    String agent_usercode;
+    String sales_chanel;
+
+    public Customers(String customer_id, String id_no, String first_name, String last_name, String dob, String kra_pin, String occupation, String mobile_no, String email, String location, String postal_address, String postal_code, String town, String country, String photo_url, String nok_fullname, String nok_mobileno, String nok_relation, String agent_code, String agent_usercode, String sales_chanel) {
+        this.customer_id = customer_id;
+        this.id_no = id_no;
         this.first_name = first_name;
         this.last_name = last_name;
         this.dob = dob;
@@ -38,6 +48,24 @@ public class customerDescription {
         this.nok_mobileno = nok_mobileno;
         this.nok_relation = nok_relation;
         this.agent_code = agent_code;
+        this.agent_usercode = agent_usercode;
+        this.sales_chanel = sales_chanel;
+    }
+
+    public String getCustomer_id() {
+        return customer_id;
+    }
+
+    public void setCustomer_id(String customer_id) {
+        this.customer_id = customer_id;
+    }
+
+    public String getId_no() {
+        return id_no;
+    }
+
+    public void setId_no(String id_no) {
+        this.id_no = id_no;
     }
 
     public String getFirst_name() {
@@ -175,5 +203,23 @@ public class customerDescription {
     public void setAgent_code(String agent_code) {
         this.agent_code = agent_code;
     }
+
+    public String getAgent_usercode() {
+        return agent_usercode;
+    }
+
+    public void setAgent_usercode(String agent_usercode) {
+        this.agent_usercode = agent_usercode;
+    }
+
+    public String getSales_chanel() {
+        return sales_chanel;
+    }
+
+    public void setSales_chanel(String sales_chanel) {
+        this.sales_chanel = sales_chanel;
+    }
+
+
 
 }
