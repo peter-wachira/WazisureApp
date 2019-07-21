@@ -2,7 +2,7 @@ package com.peterwachira.wazinsureapiclient.service;
 import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
-​import com.peterwachira.wazinsureapiclient.UI.LoginActivity;
+import com.peterwachira.wazinsureapiclient.UI.LoginActivity;
 import com.peterwachira.wazinsureapiclient.constants.Constants;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,7 +41,7 @@ public class PostService {
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")
                 .build();
-        ​client.newCall(request).enqueue(new Callback() {
+        client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
                 String mMessage = e.getMessage();
@@ -63,7 +63,6 @@ public class PostService {
     }
     //    User login method
     public void login(String username, String password) throws IOException {
-​
         MediaType MEDIA_TYPE = MediaType.parse("application/json");
         String url = Constants.LOGIN + "/login";
         OkHttpClient client = new OkHttpClient();
@@ -71,13 +70,12 @@ public class PostService {
         try {
             postdata.put("username", username);
             postdata.put("password", password);
-​
-        } catch (JSONException e) {
+        }
+        catch (JSONException e) {
             e.printStackTrace();
         }
         //creating an new post request
         RequestBody body = RequestBody.create(MEDIA_TYPE, postdata.toString());
-​
         Request request = new Request.Builder()
                 .url(url)
                 .post(body)
@@ -94,14 +92,12 @@ public class PostService {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 String mMessage = response.body().string();
-
                 JSONObject responseJSON = null;
                 try {
                     responseJSON = new JSONObject(mMessage);
                     System.out.println(responseJSON);
                     if (responseJSON.getString("status").equals("success")) {
                         loginActivity.status = responseJSON.getString("status");
-
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

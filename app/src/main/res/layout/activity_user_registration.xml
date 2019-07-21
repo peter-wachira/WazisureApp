@@ -6,13 +6,18 @@
     android:padding="40dp"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".UI.RegistrationActivity">
-
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/profilepic" />
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:id="@+id/fullname" android:hint="full name"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="5dp"
         android:textColor="#2d2d2d"
         android:paddingLeft="0dp"
         android:drawablePadding="5dp"
@@ -24,7 +29,7 @@
         android:ems="10"
         android:id="@+id/id_no"
         android:hint="Id number"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textColor="#2d2d2d"
         android:paddingLeft="0dp"
         android:drawablePadding="5dp"
@@ -36,23 +41,23 @@
         android:ems="10"
         android:id="@+id/mobile_no"
         android:hint="mobile number"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textColor="#2d2d2d"
         android:paddingLeft="0dp"
         android:drawablePadding="5dp"
         android:textColorHint="#999"/>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:id="@+id/profileurl"
-        android:hint="profileurl"
-        android:layout_marginTop="10dp"
-        android:textColor="#2d2d2d"
-        android:paddingLeft="0dp"
-        android:drawablePadding="5dp"
-        android:textColorHint="#999"/>
+    <!--<com.google.android.material.textfield.TextInputEditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/profileurl"-->
+        <!--android:hint="profileurl"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textColor="#2d2d2d"-->
+        <!--android:paddingLeft="0dp"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--android:textColorHint="#999"/>-->
 
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="match_parent"
@@ -60,7 +65,7 @@
         android:ems="10"
         android:id="@+id/email"
         android:hint="email"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textColor="#2d2d2d"
         android:paddingLeft="0dp"
         android:drawablePadding="5dp"
@@ -72,7 +77,7 @@
         android:ems="10"
         android:id="@+id/username"
         android:hint="username"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textColor="#2d2d2d"
         android:paddingLeft="0dp"
         android:drawablePadding="5dp"

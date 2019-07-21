@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        _signupLink.setOnClickListener(new View.OnClickListener() {
+        _signupLink.setOnClickListener(new View .OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Start the Signup activity
@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         _loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,5 +60,6 @@ public class LoginActivity extends AppCompatActivity {
         String password = _passwordText.getText().toString();
         PostService postService = new PostService();
         postService.login(user_name, password);
+
     }
 }
